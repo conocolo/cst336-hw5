@@ -1,0 +1,25 @@
+body {
+    padding-top: 5rem;
+    background-color: #bdbdbd;
+    background-image: url("/img/background.jpg");
+}
+
+.search {
+    opacity: 0.97;
+  }
+
+.jumbotron {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 25vh; /* These two lines are counted as one :-)       */
+    align-items: center;
+    padding: 32px 32px;
+}
+main {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    background-color: #ebebeb;
+    border-radius: 10px
+}
