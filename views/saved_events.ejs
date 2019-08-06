@@ -1,0 +1,21 @@
+<% include partials/header.ejs %>
+
+<body>
+    <div class="container">
+            <div class="jumbotron">
+                <h1>Saved Events</h1>
+                <div id="events" class="container">
+                    <% rows.forEach(function(row) { %>
+                        <h5> <%= row['eventName'] %> </h5>
+                        <h5> <%= row['eventDate'] %> </h5>
+                        <a href="<%= row['eventLink'] %> ">Ticketmaster Link</a><br>
+                        <img id="<%= row['tmID'] %>" src="<%= row['imageURL'] %>" width=200 height=200"/>
+                        <img class='favoriteIcon' src='img/fav_on.png'></img>
+                        <hr>
+                    <% }) %>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="js/saved_events.js"></script>
+<% include partials/footer.ejs %>
